@@ -13,6 +13,8 @@ class StartVC: UIViewController {
 	@IBOutlet weak var mLabel: UILabel!
 	let mImages = ["Calculation", "Currency", "Player", "About"]
 	var mIndex = 0
+	
+	@IBAction func unwindToStart(_ sender: UIStoryboardSegue) {}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

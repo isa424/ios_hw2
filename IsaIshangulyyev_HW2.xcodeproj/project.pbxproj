@@ -61,11 +61,11 @@
 				B898A021260A89A800F4D51C /* AppDelegate.swift */,
 				B898A023260A89A800F4D51C /* SceneDelegate.swift */,
 				B898A025260A89A800F4D51C /* StartVC.swift */,
+				B898A03A260AA92F00F4D51C /* CalculationVC.swift */,
 				B898A027260A89A800F4D51C /* Main.storyboard */,
 				B898A02A260A89A900F4D51C /* Assets.xcassets */,
 				B898A02C260A89A900F4D51C /* LaunchScreen.storyboard */,
 				B898A02F260A89A900F4D51C /* Info.plist */,
-				B898A03A260AA92F00F4D51C /* CalculationVC.swift */,
 			);
 			path = IsaIshangulyyev_HW2;
 			sourceTree = "<group>";
