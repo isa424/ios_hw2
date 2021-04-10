@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8178E99261ED2CD004782E2 /* InputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8178E98261ED2CD004782E2 /* InputVC.swift */; };
 		B898A022260A89A800F4D51C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898A021260A89A800F4D51C /* AppDelegate.swift */; };
 		B898A024260A89A800F4D51C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898A023260A89A800F4D51C /* SceneDelegate.swift */; };
 		B898A026260A89A800F4D51C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898A025260A89A800F4D51C /* StartVC.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8178E98261ED2CD004782E2 /* InputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputVC.swift; sourceTree = "<group>"; };
 		B898A01E260A89A800F4D51C /* IsaIshangulyyev_HW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IsaIshangulyyev_HW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B898A021260A89A800F4D51C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B898A023260A89A800F4D51C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				B898A023260A89A800F4D51C /* SceneDelegate.swift */,
 				B898A025260A89A800F4D51C /* StartVC.swift */,
 				B898A03A260AA92F00F4D51C /* CalculationVC.swift */,
+				B8178E98261ED2CD004782E2 /* InputVC.swift */,
 				B898A027260A89A800F4D51C /* Main.storyboard */,
 				B898A02A260A89A900F4D51C /* Assets.xcassets */,
 				B898A02C260A89A900F4D51C /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8178E99261ED2CD004782E2 /* InputVC.swift in Sources */,
 				B898A026260A89A800F4D51C /* StartVC.swift in Sources */,
 				B898A03B260AA92F00F4D51C /* CalculationVC.swift in Sources */,
 				B898A022260A89A800F4D51C /* AppDelegate.swift in Sources */,

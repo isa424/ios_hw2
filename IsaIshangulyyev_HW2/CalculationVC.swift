@@ -10,7 +10,9 @@ import UIKit
 class CalculationVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 	@IBOutlet weak var mPicker: UIPickerView!
 	@IBOutlet weak var mShapeImg: UIImageView!
-	var mShapes = ["Triangle", "Circle", "Rectangle"]
+	@IBOutlet weak var mInputBtn: UIButton!
+	let mShapes = ["Triangle", "Circle", "Rectangle"]
+	var selectedShape = "Triangle"; // Necessary for InputVC segue
 	
 	func numberOfComponents(in pickerView: UIPickerView) -> Int {
 		return 1
@@ -25,6 +27,7 @@ class CalculationVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
 	 func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 		if (row > -1 && row < self.mShapes.count) {
 			self.mShapeImg.image = UIImage(named: self.mShapes[row])
+			self.selectedShape = self.mShapes[row]
 		}
 	 }
 
@@ -39,7 +42,10 @@ class CalculationVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         // Do any additional setup after loading the view.
 		self.mPicker.selectRow(0, inComponent: 0, animated: true)
     }
-    
+	
+	@IBAction func onInputButtonTap(_ sender: UITapGestureRecognizer) {
+		performSegue(withIdentifier: "input", sender: self)
+	}
 
     // MARK: - Navigation
 
@@ -47,6 +53,11 @@ class CalculationVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+		if segue.identifier == "input" {
+			if let inputVC = segue.destination as? InputVC {
+				inputVC.mShape = self.selectedShape
+			}
+		}
     }
 
 }
